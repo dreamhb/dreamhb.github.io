@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to my blog maomao!"
 date:   2015-10-29 09:41:27 +0800
 categories: jekyll update
 tag: first
