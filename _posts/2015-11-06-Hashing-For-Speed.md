@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hashing For Speed
-excerpt: "学习 Thinking in Java"
+excerpt: "为什么HashMap会快呢？"
 modified: 2015-11-06
 tags: [intro, java, reading note]
 comments: true
