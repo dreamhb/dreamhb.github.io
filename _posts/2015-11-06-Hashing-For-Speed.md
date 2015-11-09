@@ -6,9 +6,8 @@ modified: 2015-11-06
 tags: [intro, java, reading note]
 comments: true
 image:
-feature: sample-image-5.jpg
-credit: WeGraphics
-creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+    feature: sample-image-5.jpg
+    credit: maomao 
 ---
 
 
