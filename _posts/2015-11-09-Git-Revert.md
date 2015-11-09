@@ -10,7 +10,7 @@ image:
 ---
 
 ```git log
-```git reset --hard <commit-id>
-```git push <remote-repo> HEAD --force
+git reset --hard <commit-id>
+git push <remote-repo> HEAD --force
 
 HEAD表示当前，HEAD^表示上一次提交，HEAD^^表示上上一次提交
