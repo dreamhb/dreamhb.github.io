@@ -9,10 +9,10 @@ image:
     feature: sample-image-5.jpg
 ---
 
-git log
+>git log
 
-git reset --hard <commit-id>
+>git reset --hard <commit-id>
 
-git push <remote-repo> HEAD --force
+>git push <remote-repo> HEAD --force
 
 HEAD表示当前，HEAD^表示上一次提交，HEAD^^表示上上一次提交
