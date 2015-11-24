@@ -6,7 +6,7 @@ modified: 2015-11-24
 tags: [java, reading note]
 comments: true
 image:
-feature: sample-image-5.jpg
+    feature: sample-image-5.jpg
 ---
 
 单例就是一个类只会被实例化一次，仅且一次。单例的典型用法是，代表了一些系统组件，他们在本质上是唯一的，比如视屏显示或者文件系统。
