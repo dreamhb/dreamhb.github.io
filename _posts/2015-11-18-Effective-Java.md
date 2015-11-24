@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Effective Java 
-excerpt: "创建和销毁对象"
+excerpt: "创建和销毁对象 - 用静态工厂方法替代构造方法"
 modified: 2015-11-18
 tags: [java]
 comments: true
@@ -55,4 +55,3 @@ public static Boolean valueOf(boolean b){
 
 总结一下：静态工厂方法和公有构造函数都有他们的作用和使用场景，我们应当理解他们各自的优势，避免习惯性的思维直接考虑公有构造函数而忽视了首先考虑静态工厂方法，因为它总是更合适一些。如果你权衡了俩种方式，而且没有明显的倾向，那么推荐使用构造函数，因为其更规范一些。
 
-**未完待续**
