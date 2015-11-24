@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Effective Java 
+title: Effective Java One
 excerpt: "创建和销毁对象 - 用静态工厂方法替代构造方法"
 modified: 2015-11-18
 tags: [java]
