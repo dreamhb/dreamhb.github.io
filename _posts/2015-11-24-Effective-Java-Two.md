@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Effective Java Two
+title: Effective Java （二）
 excerpt: "创建和销毁对象  使用私有构造函数实现单例特性"
 modified: 2015-11-24
 tags: [java, reading note]
