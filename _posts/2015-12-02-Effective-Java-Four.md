@@ -14,7 +14,6 @@ feature: sample-image-3.jpg
 
 <pre>
 <code>
-
 //Can you spot the "memory leak"
 public class Stack{
     private Object[] elements;
@@ -55,7 +54,8 @@ public class Stack{
 
 解决这个问题的方法很简单：将过期的对象赋值为NULL。在我们这个Stack例子中，其中元素的引用在一出栈就变成过期的了，正确的出栈版本是这个样子的：
 
-```
+<pre>
+<code>
 public Object pop(){
 	if(size == 0){
 		throw new EmptyStackException();
@@ -64,7 +64,8 @@ public Object pop(){
 	elements[size] = null;
 	return result;
 }
-```
+</code>
+</pre>
 将弃用的引用置为NULL的额外的好处是,如果他们随后被错误的去引用，程序会立马因为空指针异常而终止，，而不是安静的做着错得事情。尽快的发现程序的错误总是有利的。
 
 当程序员被这样的问题蜇了之后，他们倾向于过度补偿，通过在程序结束时，将所有的引用都置空。这既不是必须得也不是合适的，因为它会让程序变得凌乱而且会降低性能。将引用置空应当是个例外而不是常态。最好的消除过期引用的方法是重用被包含的变量，或者是让它挣脱当前的域。如果你在尽可能窄的域来定义变量这些就很自然的发生了。需要注意的是，在现在的JVM中，仅仅退出变量定义的代码块是不够的，必须退出包含的方法。
