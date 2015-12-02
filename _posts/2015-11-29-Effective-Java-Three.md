@@ -13,7 +13,9 @@ feature: sample-image-5.jpg
 
 <pre>
 <code>
+
 String s = new String("silly"); //DONOT DO THIS!
+
 </code>
 </pre>
 
@@ -34,6 +36,7 @@ String s = "No Longer silly";
 
 <pre>
 <code>
+
 public class Person{
 	private final Date birthDate;
 	public Person(Date birthDate){
@@ -57,6 +60,7 @@ public class Person{
 
 <pre>
 <code>
+
 class Person{
 	private final Date birthDate;
 	public Person(Date birthDate){
