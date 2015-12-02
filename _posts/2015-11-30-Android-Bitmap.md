@@ -14,14 +14,16 @@ feature: sample-image-5.jpg
 ######先获取Bitmap的大小和类型
 示例代码：
 
-```
+<pre>
+<code>
 BitmapFactory.Options options = new BitmapFactory.Options();
 options.inJustDecodeBounds = true;
 BitmapFactory.decodeResource(getResource(), R.id.image, options);
 int imageHeight = options.outHeight;
 int imageWidth = options.outWidth;
 String imageType = options.outMimeType;
-```
+</code>
+</pre>
 
 将inJustDecodeBounds设置为true，从而避免分配内存，因为在这里我们只需要Bitmap相关的一些参数。
 
@@ -33,7 +35,8 @@ String imageType = options.outMimeType;
 3. ImageView的尺寸或者将要加载图片的尺寸
 4. 当前设备的屏幕大小和分辨率
 
-```
+<pre>
+<code>
 public static int calculateInSampleSize(
             BitmapFactory.Options options, int reqWidth, int reqHeight) {
     // Raw height and width of image
@@ -56,7 +59,8 @@ public static int calculateInSampleSize(
 
     return inSampleSize;
 }
-```
+</code>
+</pre>
 
 
 ###在非UI线程中处理Bitmap
