@@ -52,7 +52,7 @@ public class Person{
 		Date boomEnd = gmtCal.getTime();
 		return birthDate.compareTo(boomStart) >= 0 &&
 			birthDate.compareTo(boomEnd) < 0;	
-	}
+}
 </code>
 </pre>
 
@@ -83,6 +83,7 @@ class Person{
 			birthDate.compareTo(BOOM_END) < 0;
 	}
 }
+
 </code>
 </pre>
 
