@@ -9,5 +9,9 @@ image:
 feature: sample-image-3.jpg
 ---
 
+**这里设置的值（除了"stateUnspecified" 和 "adjuextUnsoecified")会覆盖主题中的设置**
 
+####各个属性的解释####
+|| *属性* || *解释* ||
+||一二三||四五六||
 
