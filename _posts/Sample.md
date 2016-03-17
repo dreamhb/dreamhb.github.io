@@ -6,7 +6,7 @@ modified: 2015-11-29
 tags: [java, reading note]
 comments: true
 image:
-feature: sample-image-5.jpg
+    feature: sample-image-5.jpg
 ---
 
 
