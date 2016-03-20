@@ -19,6 +19,26 @@ feature: sample-image-5.jpg
 
 **当一个类有逻辑相等的概念而且它不同于仅仅的对象相同，同时父类也没有复写equals方法来实现这个功能**
 
+在value 相关的类中则很常见，比如Integer或者Date.
+
+typesafe enum是不需要覆写equals方法的，因为一个值最多只有一个对象。
+
+当你要覆写equals方法时，必须符合通常的规范和条约，一下就是从JSE拷贝来的：
+
+equals方法实现了**equivalence relation**:
+
+1 反射的：对任意的引用x， x.equals(x) 必须返回true
+
+2 对称的： x.equals(y) 应该和 y.equals(x) 相同
+
+3 可传递的
+
+4 稳定的
+
+5 对任何非空的引用x， x.equals(null) 必须返回false
+
+
+
 **未完待续**
 
 
