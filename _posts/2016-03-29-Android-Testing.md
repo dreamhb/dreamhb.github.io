@@ -34,3 +34,34 @@ Android测试是基于[JUnit](http://junit.org/junit4/)的。
 ####JUnit####
 
 
+一个基本的JUnit 4测试类是一个包含一个或者多个测试方法的类。测试方法是以@Test注释开头的方法。
+在JUnit4测试类中，可以使用如下的注释来达到一些特别的处理过程：
+
+1. **@Before**
+2. **@After**
+3. **@Test**
+4. **@Rule**
+	可以和一些测试规则类结合起来用，比如**ActivityTestRuls**
+5. **@BeforeClass**
+	用于每个测试类的仅执行一次的静态方法。在连接数据库等重量级操作时很有用
+6. **@AfterClass**
+	用于每个测试类所有的测试方法测试完成后，仅执行一次的静态方法。常用于释放**@BeforeClass**中分配的资源
+7. **@Test(timeout=<ms)**
+
+
+####Instrumentation####
+
+
+Android Instrumentation是Android系统中控制方法和钩子的集合。这些钩子能够以独立于正常生命周期的方式控制组件。他们也能够控制Android如何加载应用。
+![diagram](../images/android_instrumentation_test_framework.png)
+
+
+####Android Testing Support Library####
+1. AndroidJUnitRunner
+2. Espresso
+3. UI Automator
+
+####Monkey Monkeyrunner####
+
+
+
