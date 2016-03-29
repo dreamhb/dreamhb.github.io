@@ -10,6 +10,8 @@ image:
 ---
 
 ####测试结构
+
+
 Android测试是基于[JUnit](http://junit.org/junit4/)的。
 
 根据当前的测试环境，我们可以用一下俩种方式运行我们的测试：
@@ -27,3 +29,8 @@ Android测试是基于[JUnit](http://junit.org/junit4/)的。
 |		|	基于Instrument的单元测试	|运行于Android真机或者模拟器上。这些单元测试能够获取到 **Instrumentation**的信息，比如测试App的Context。如果有对Android 框架的依赖，而且mock对象不能满足，需要使用这个测试|
 |集成测试|App内部的|用于验证目标App是否像预想的那样表现，比如当用户执行了一个特定的操作或者在Activity中输入了一个特定的值。UI 测试框架比如[Espresso](http://developer.android.com/tools/testing-support-library/index.html#Espresso)可以让你通过编程来模拟用户的行为以及更复杂的app内的用户交互|
 ||跨App组件的|用于验证验证不同的用户app或者在用户app和系统app之间的交互。UI测试框架支持跨app的交互，比如UI Automator|
+
+
+####JUnit
+
+
