@@ -9,7 +9,7 @@ image:
     feature: sample-image-5.jpg
 ---
 
-####测试结构####
+#### 测试结构
 
 
 Android测试是基于[JUnit](http://junit.org/junit4/)的。
@@ -31,7 +31,7 @@ Android测试是基于[JUnit](http://junit.org/junit4/)的。
 ||跨App组件的|用于验证验证不同的用户app或者在用户app和系统app之间的交互。UI测试框架支持跨app的交互，比如UI Automator|
 
 
-####JUnit####
+#### JUnit
 
 
 一个基本的JUnit 4测试类是一个包含一个或者多个测试方法的类。测试方法是以@Test注释开头的方法。
@@ -49,19 +49,19 @@ Android测试是基于[JUnit](http://junit.org/junit4/)的。
 7. **@Test(timeout=<ms)**
 
 
-####Instrumentation####
+#### Instrumentation
 
 
 Android Instrumentation是Android系统中控制方法和钩子的集合。这些钩子能够以独立于正常生命周期的方式控制组件。他们也能够控制Android如何加载应用。
 ![diagram](../images/android_instrumentation_test_framework.png)
 
 
-####Android Testing Support Library####
+#### Android Testing Support Library
 1. AndroidJUnitRunner
 2. Espresso
 3. UI Automator
 
-####Monkey Monkeyrunner####
+#### Monkey Monkeyrunner
 
 
 
