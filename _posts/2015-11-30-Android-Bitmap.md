@@ -5,12 +5,11 @@ excerpt: "如何避免因为Bitmap而引起的OOM"
 modified: 2015-11-30
 tags: [android]
 comments: true
-image:
-feature: sample-image-5.jpg
 ---
 
 ### 高效的加载大的Bitmap
 从各种图片源获取的Bitmap往往都是比较大的，如果直接加载到内存中容易造成OOM异常，现提供如下思路：
+
 ###### 先获取Bitmap的大小和类型
 示例代码：
 
