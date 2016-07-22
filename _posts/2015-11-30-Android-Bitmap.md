@@ -66,7 +66,9 @@ public static int calculateInSampleSize(
 BitmapFatory.decode方法，如果源数据来自磁盘或者网络地址，那么不能放在主线程中。
 
 ### 缓存Bitmap
+
 ##### Memory Cache
+
 LruCache 使用LinkedHashMap结构
 
 ##### 磁盘缓存
@@ -81,6 +83,7 @@ DiskLruCache
 2.	在Android2.3.3(API 10)或者以下，bitmap背后的像素数据是保存在native内存中的。和bitmap本身是分开的，而bitmap是保存在Dalvik heap上的。在本地内存中的像素数据不会像预想的那样释放，将潜在的导致内存溢出，并导致应用奔溃。在Android3.0（API 11）中，像素数据和bitmap一起存放在了Dalvik的堆上。
 
 下面的例子将介绍在不同的Android版本上如何优化bitmap的内存管理
+
 #### Android 2.3.3 及以下
 在这种情况下，建议使用Bitmap的recycle方法。如果你显示大量的bitmap数据，那么很有可能导致OOM错误。**recycle**方法让app尽可能快的回收内存。
 
