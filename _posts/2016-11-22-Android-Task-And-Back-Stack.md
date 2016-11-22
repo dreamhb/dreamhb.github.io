@@ -5,16 +5,16 @@ date:   2016-11-22 10:54:45
 categories: main
 ---
 
-###Task
+### Task
 
 means a collection of Activities which do a certain job.
 
-###Back Stack
+### Back Stack
 
 The Activities in collection are routed in a stack, when press **back button**, the top will pop up, and finished.
 
 
-###Activity Launch mode
+### Activity Launch mode
 
 We can define Activity launch mode in Two ways:
 
@@ -22,7 +22,7 @@ We can define Activity launch mode in Two ways:
     two: start activity using intent ,and set flags
 
 
-####launchMode
+#### launchMode
     ***can have multi instances***
         stardand: default behavior
         singleTop:same as above, but when the start activity in the Target task and on top of it stack, the onNewIntent of it will be called.
