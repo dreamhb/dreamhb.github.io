@@ -17,6 +17,7 @@ The Activities in collection are routed in a stack, when press **back button**, 
 ###Activity Launch mode
 
 We can define Activity launch mode in Two ways:
+
     one: define launchMode in AndroidManifest.xml
     two: start activity using intent ,and set flags
 
