@@ -6,4 +6,4 @@ comments: true
 categories: main
 ---
 
-![class map](../images/RouterUML.jpg)
+![class map](https://github.com/dreamhb/dreamhb.github.io/blob/master/images/RouterUML.jpg)
