@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 comments: true
 title:  "Android Task & Back Stack"
 date:   2016-11-22 10:54:45
