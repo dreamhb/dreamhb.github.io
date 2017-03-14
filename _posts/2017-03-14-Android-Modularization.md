@@ -6,4 +6,4 @@ comments: true
 categories: main
 ---
 
-[!class map] (../images/RouterUML.jpg)
+![class map](../images/RouterUML.jpg)
