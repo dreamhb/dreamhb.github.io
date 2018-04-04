@@ -6,8 +6,8 @@ comments: true
 categories: main
 ---
 
-![](../images/memory_view?raw=true)
-![](../images/detail_view?raw=true)
+![](../images/memory_view.png?raw=true)
+![](../images/detail_view.png?raw=true)
 
 1.
 在开发稍微大型一点的Android App的时候，稍不小心，可能就会因为内存溢出
