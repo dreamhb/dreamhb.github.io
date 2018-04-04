@@ -8,4 +8,4 @@ categories: main
 ---
 =======
 
-![类图](https://raw.githubusercontent.com/dreamhb/dreamhb.github.io/master/images/RouterUML.jpg)
+![类图](/images/RouterUML.jpg)
