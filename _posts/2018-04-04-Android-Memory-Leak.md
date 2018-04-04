@@ -6,6 +6,9 @@ comments: true
 categories: main
 ---
 
+![](../image/memory_view?raw=true)
+![](../image/detail_view?raw=true)
+
 1.
 在开发稍微大型一点的Android App的时候，稍不小心，可能就会因为内存溢出
 而碰到OutOfMemory异常，而使应用崩溃。
