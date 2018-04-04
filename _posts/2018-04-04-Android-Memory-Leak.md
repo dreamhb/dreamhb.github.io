@@ -6,8 +6,6 @@ comments: true
 categories: main
 ---
 
-![](/images/memory_view.png)
-![](/images/detail_view.png)
 
 1.
 在开发稍微大型一点的Android App的时候，稍不小心，可能就会因为内存溢出
@@ -26,5 +24,10 @@ OutOfMemory异常，应用崩溃。
 4.打开Android Profiler界面，会有CPU、内存和网络，点击内存选项，会看到内存试图。
 会随着时间的变化而变化。点击左上方的垃圾桶按钮，触发内存回收，然后点击垃圾桶旁边的按钮，获取到当前的app内存heap的情况。
 其中会列出当前heap中有哪些实例，如果某个已经被销毁的Activity仍然在其中，那么可以断定这个Activity发生了内存泄漏。接下来就要分析，到底是那个实例或者变量导致这个问题。点击左边的某个Activity，会在右边的试图中看到这个Activity的实例，展开便可看到其中有哪些引用。
+
+![内存视图](/images/memory_view.png)
+
+
+![详细视图](/images/detail_view.png)
 
 5。在分析具体哪个实例导致的内存溢出，我们采用了Square开源的LeakCanary框架，如果有内存泄漏，LeakCanary会直接显示出，是哪个变量导致的内存泄漏，方便我们快速的定位问题。
