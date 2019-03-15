@@ -8,6 +8,6 @@ categories: main
 
 
 Q1: Why Android UI thread is not blocked ?
-    Q1a: How Android App startup ?
-    Q1b: How process and thread of app be created ?
-    Q1c: How does epoll work ?
+> Q1a: How Android App startup ?
+> Q1b: How process and thread of app be created ?
+> Q1c: How does epoll work ?
