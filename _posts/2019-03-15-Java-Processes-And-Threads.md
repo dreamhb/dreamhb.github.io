@@ -9,12 +9,10 @@ categories: main
 #### Questions: 
 
 Q1: What the difference between Process and Thread ? 
-
-A1: Process has different memory space but Threads within a process share same memory 
+> A1: Process has different memory space but Threads within a process share same memory 
 
 Q2: How Process be created ? 
-
-A2: fork 
+> A2: fork 
 
 Q3: How Thread be created ? 
 
