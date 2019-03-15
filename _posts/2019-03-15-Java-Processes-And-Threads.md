@@ -6,7 +6,7 @@ comments: true
 categories: main
 ---
 
-####Questions: 
+#### Questions: 
 
 Q1: What the difference between Process and Thread ? 
 A1: Process has different memory space but Threads within a process share same memory 
@@ -28,4 +28,4 @@ Q5: How does ActivityThread run in thread ?
 Q6: How threads communicate with each other ? 
 
 Q7: How Android create thread ? 
-    A7: ![../images/AndroidThreadCreate.svg] 
+    A7: ![AndroidThreadCreate](../images/AndroidThreadCreate.svg) 
