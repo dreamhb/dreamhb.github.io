@@ -26,4 +26,4 @@ Q5: How does ActivityThread run in thread ?
 Q6: How threads communicate with each other ? 
 
 Q7: How Android create thread ? 
-> A7: ![AndroidThreadCreate](../images/AndroidThreadCreate.svg) 
+> A7: ![AndroidThreadCreate](../images/AndroidThreadCreate.png) 
