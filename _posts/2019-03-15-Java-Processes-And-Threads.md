@@ -9,7 +9,8 @@ categories: main
 #### Questions: 
 
 Q1: What the difference between Process and Thread ? 
-> A1: Process has different memory space but Threads within a process share same memory 
+> A1: Processes have different memory space but Threads within a process share same memory.
+In JVM process has at least one thread which called main thread.
 
 Q2: How Process be created ? 
 > A2: fork 
@@ -27,3 +28,5 @@ Q6: How threads communicate with each other ?
 
 Q7: How Android create thread ? 
 > A7: ![AndroidThreadCreate](/images/AndroidThreadCreate.png) 
+
+Q8: How processes communicate with each other(IPC) ?
