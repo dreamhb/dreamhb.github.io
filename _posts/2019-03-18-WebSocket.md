@@ -15,9 +15,9 @@ WebSocket provides low latency and less complexity.
 #### protocol vs  
 
 | protocol | position in OSI | port | communication | efficiency | latency |
-| ---- | ----- | ---- | ---- | ---- | ---- |
-| WebSocket(ws/wss) | 7 | 80 443 | full-duplex | good | low |
-| Http | 7 | 80 443 | not-sure | not sure | not sure |
+| ---- | -----| ---- | ---- | ---- | ---- |
+| WebSocket(ws/wss) | 7| 80 443 | full-duplex | good | low |
+| Http | 7| 80 443 | not sure | not sure | not sure |
 
 
 #### protocol handshake 
