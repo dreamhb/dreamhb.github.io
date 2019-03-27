@@ -20,7 +20,7 @@ Q3: How Thread be created ?
 
 **procedure**  
 Thread.start() --> nativeCreate --> java_lang_thread.Thread_nativeCreate --> thread(art/runtime).CreateNativeThread --> JNIEnvExt::Create --> pthread_create  
-Ether JNIENVExt::Create or pthread_create failed, a OutOfMemory runtime exception will be through
+Either JNIENVExt::Create or pthread_create failed, a OutOfMemory runtime exception will be through
 
 Q4: How does Thread run code in it ? 
 > A4: There is only one thread the main thread, the main static method will be run in it. 
