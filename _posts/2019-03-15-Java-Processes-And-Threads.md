@@ -16,7 +16,11 @@ Q2: How Process be created ?
 > A2: fork 
 
 Q3: How Thread be created ? 
-> A3: When a JVM starts, it will creates a process and a thread in it, which calls the main thread.  And it runs immediately. 
+> A3: When a JVM starts, it will creates a process and a single thread in it, which calls the main thread.  And it runs main method of desingated class immediately. 
+
+**procedure**  
+Thread.start() --> nativeCreate --> java_lang_thread.Thread_nativeCreate --> thread(art/runtime).CreateNativeThread --> JNIEnvExt::Create --> pthread_create  
+Ether JNIENVExt::Create or pthread_create failed, a OutOfMemory runtime exception will be through
 
 Q4: How does Thread run code in it ? 
 > A4: There is only one thread the main thread, the main static method will be run in it. 
