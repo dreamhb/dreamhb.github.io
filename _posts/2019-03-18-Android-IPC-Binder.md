@@ -19,3 +19,7 @@ Q3. What is the architecture of Binder ?
 
 Q4. How the data flows from client process to and from server process using Binder ?  
 
+
+#### Below is the procedure of Client comminicates with Service using AIDL Binder IPC  
+
+![Android IPC Procedure](/images/IPC.svg)

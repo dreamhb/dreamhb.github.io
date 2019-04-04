@@ -34,3 +34,5 @@ Q7: How Android create thread ?
 > A7: ![AndroidThreadCreate](/images/AndroidThreadCreate.png) 
 
 Q8: How processes communicate with each other(IPC) ?
+
+Q9: How does pthread_create work ?
