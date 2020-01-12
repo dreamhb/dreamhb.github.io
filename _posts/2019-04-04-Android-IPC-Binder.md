@@ -10,7 +10,9 @@ Binder is an IPC method using in Android platform.
 
 ### Question:  
 Q1. Android bases on Linux, and Linux has many IPC methods such as **Socket** **Pipe**, why Android using the Binder ?  
-
+A1. support transfer file descriptor across processes  
+    support object mapping  
+    support client-server model  
 Q2. How does Binder work ?  
 
 
