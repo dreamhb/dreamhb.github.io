@@ -4,6 +4,7 @@ title:  "Managing Oneself"
 date:   2020-02-23 17:50:00
 comments: true
 categories: translation
+
 ---
 
 # 自我管理 

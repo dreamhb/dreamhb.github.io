@@ -6,7 +6,7 @@ modified: 2015-12-21
 tags: [android]
 comments: true
 image:
-feature: sample-image-3.jpg
+    feature: default_header.jpg
 ---
 
 **这里设置的值（除了"stateUnspecified" 和 "adjuextUnsoecified")会覆盖主题中的设置**
