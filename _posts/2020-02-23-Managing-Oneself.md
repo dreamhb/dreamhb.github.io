@@ -6,6 +6,9 @@ comments: true
 categories: translation
 ---
 
+# 自我管理 
+翻译自德鲁克的Managing Oneself. 
+
 在知识经济时代，那些了解自己、自己的长处、自己的价值观以及如何表现最佳的人，能够成功。
 
 
