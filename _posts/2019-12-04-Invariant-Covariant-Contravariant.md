@@ -13,9 +13,7 @@ Generics are invariant and erasure.
 ### wildcards  
 Sometimes we would like lists to behave more like arrays, in that we want to accept not only a list with elements of a given type, but also a list with elements of any subtype of a given type. For this purpose, we use wildcards.  
 
-
-### wildcards  
-Sometimes we would like lists to behave more like arrays, in that we want to accept not only a list with elements of a given type, but also a list with elements of any subtype of a given type. For this purpose, we use wildcards.  
+  
 1.  Wildcards with extends: <? extends E>  
     In general, if a structure contains elements with a type of the form ? extends E, we can get elements out of the structure, but we cannot put lements into it. Because we donot know what the specific type is.
 
