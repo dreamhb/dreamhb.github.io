@@ -16,4 +16,4 @@ gems:
 #Others
 markdown: kramdown
 
-theme: jekyll-theme-modernist
+theme: jekyll-theme-cayman
