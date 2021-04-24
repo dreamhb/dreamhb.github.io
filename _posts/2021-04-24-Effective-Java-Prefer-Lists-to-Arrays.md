@@ -89,5 +89,7 @@ Java中， 数组reify内容的信息，而范型不会reify他们的类型参�
 *   为什么用erasure来实现范型
     *   简单，只需要改编译器，保持二进制兼容
     *   方便逐渐的进化，让新代码用范型的同时，与老代码兼容
+
+
 ## Arrays vs Generics
 数组和范型是非常不同的类型规则。数组是covariant和reified；范型是invariant和erased。
