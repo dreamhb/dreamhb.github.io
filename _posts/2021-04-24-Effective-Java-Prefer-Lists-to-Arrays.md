@@ -45,6 +45,7 @@ use **extend** wildcard when you only get values out of a structure, use a **sup
     ```
 *   in & out in Kotlin
     *   in for contravariant
+
     ```kotlin
     interface Comparable<in T> {
         operator fun compareTo(other: T): Int
@@ -56,7 +57,9 @@ use **extend** wildcard when you only get values out of a structure, use a **sup
         val y: Comparable<Double> = x // OK!
     }
     ```
+
     *   out for covariant
+
     ```kotlin
     interface Source<out T> {
         fun nextT(): T
@@ -67,6 +70,7 @@ use **extend** wildcard when you only get values out of a structure, use a **sup
         // ...
     }
     ```
+    
 ## Reification vs Erasure
 Java中， 数组reify内容的信息，而范型不会reify他们的类型参数。
 我们说一个类型reifiable，如果它在运行时和编译时完全一样，也就是**erasure**没有去除任何有用的信息。
