@@ -18,7 +18,6 @@ image:
 Java 从1.5版本开始引入范型的概念。在引入范型之前，从集合中读出的对象，都要手动cast，如果类型不一致，就会导致运行时的异常。而通过范型，我们可以告诉编译器集合中允许的类型。编译器自动插入cast，并在编译时报错，如果你插入了错误的类型。有范型加持的程序，**更安全更简洁**，当然也更复杂。
 
 ## Covariant vs Invariant vs Contravariant
-### 概念
 
 ```java
 public static <T> void copy(List<? super T> dest, List<? extends T> src) {
@@ -70,7 +69,7 @@ use **extend** wildcard when you only get values out of a structure, use a **sup
         // ...
     }
     ```
-    
+
 ## Reification vs Erasure
 Java中， 数组reify内容的信息，而范型不会reify他们的类型参数。
 我们说一个类型reifiable，如果它在运行时和编译时完全一样，也就是**erasure**没有去除任何有用的信息。
@@ -86,5 +85,9 @@ Java中， 数组reify内容的信息，而范型不会reify他们的类型参�
     *   类型变量 （T）
     *   有具体参数的参数化类型 (List<'String'>)
 
+#### Erasure
+*   为什么用erasure来实现范型
+    *   简单，只需要改编译器，保持二进制兼容
+    *   方便逐渐的进化，让新代码用范型的同时，与老代码兼容
 ## Arrays vs Generics
 数组和范型是非常不同的类型规则。数组是covariant和reified；范型是invariant和erased。
