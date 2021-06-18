@@ -5,7 +5,7 @@ date:   2021-04-19 17:50:00
 comments: true
 categories: Translation
 images:
-  feature: sample-image-1.jpg
+  feature: /images/default_header.jpg
 ---
 
 # 自我管理  
