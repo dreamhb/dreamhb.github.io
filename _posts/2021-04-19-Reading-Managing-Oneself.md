@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: post
 title:  "Managing Oneself"
 date:   2021-04-19 17:50:00
 comments: true
 categories: Translation
-images:
-  feature: /images/default_header.jpg
+image:
+    feature: sample-image-1.jpg
 ---
 
 # 自我管理  
