@@ -3,7 +3,7 @@ layout: post
 title:  "DS-Binary-Search-Tree"
 date:   2021-06-14 17:50:00
 comments: true
-categories: data structures & algorithms
+categories: ds
 ---
 
 # Binary Search Tree
@@ -146,8 +146,8 @@ public int max(Tree node) {
     *   the node to delete has no child
     *   the node to delete has one child only
     *   the node to delete has two children （left & right）
-        *   the successor of the right subtree is the right child
-        *   the successor of the right subtree is not the right child 
+        *   the minimum of the right subtree is the right child
+        *   the minimum of the right subtree is not the right child 
 
     
     ```java
