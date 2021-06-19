@@ -13,13 +13,13 @@ Let x be a node in a binary search tree. If y is a node in the left subtree of x
 
 ## Traverse  
 *   In-order
-```java
-void inOrder(Tree node) {
-    inOrder(node.left);
-    print(node.key);
-    inOrder(node.right);
-}
-```
+    ```java
+    void inOrder(Tree node) {
+        inOrder(node.left);
+        print(node.key);
+        inOrder(node.right);
+    }
+    ```
 *   Pre-order
 ```java
 void preOrder(Tree node) {
@@ -71,7 +71,7 @@ public int min(Tree node) {
     return node.key;
 }
 ```
-*   Maximum
+*   Maximum  
 ```java
 public int max(Tree node) {
     while(node != null && node.right != null) {
@@ -83,7 +83,7 @@ public int max(Tree node) {
 ```
 *   Successor
     *   definition  
-        the smallest key larger than current node
+        the smallest key larger than current node.
     *   code
     ```java
     public int successor(Tree node) {
@@ -99,6 +99,90 @@ public int max(Tree node) {
         return y.key;
     }
     ```
-*   Predecessor
-*   Insertion
-*   Deletion
+*   Predecessor  
+    *   definition  
+        the largest key smaller than current node.
+    *   code
+    ```java
+    public int predecessor(Tree node) {
+        if (node.left != null) {
+            return maximum(node.left);
+        }
+        //otherwise it must be the current node's parent and current is the right subtree of it
+        Tree y = node.parent;
+        while(y != null && node == y.left) {
+            y = y.parent;
+        }
+        return y.key;
+    }
+    ```
+*   Insertion  
+    find the position and insert it, it always will be the leaf node.
+    ```java
+    public void insert(Tree root, Tree x) {
+        Tree parent = null;
+        while (root != null) {
+            parent = root;
+            if (x.key < root.key) {
+                root = root.left;
+            } else {
+                root = root.right;
+            }
+        }
+
+        if (parent == null) {
+            //tree is empty
+            root = x;
+        }else if (z.key < parent.key) {
+            parent.left = x;
+        } else {
+            parent.right = x;
+        }
+    }
+    ```
+*   Deletion  
+    Deletion of binary search tree has three conditions.
+    *   the node to delete has no child
+    *   the node to delete has one child only
+    *   the node to delete has two children （left & right）
+        *   the successor of the right subtree is the right child
+        *   the successor of the right subtree is not the right child 
+
+    
+    ```java
+    //replace subtree u of root with v
+    public void transplant(Tree root, Tree u, Tree v) {
+        if (u.p == null) {
+            root = v;
+        } else if (u == u.p.left) {
+            u.p.left = v;
+        } else {
+            u.p.right = v;
+        }
+        if (v != null) {
+            v.p = u.p;
+        }
+    }
+    ```
+    ```java
+    public void delete(Tree root, Tree x) {
+        if (x.left == null) {
+            //has only right child
+            transplant(root, x, x.right);
+        } else if (x.right == null) {
+            //has only left child
+            transplant(root, x, x.left);
+        } else {
+            Tree min = minimum(x.right);//find min in right tree
+            if (min.p != x) {
+                transplant(root, y, y.right);
+                y.right = x.right;
+                y.right.p = y;
+            }
+            transplant(root, x, y);
+            y.left = x.left;
+            y.left.p = y;
+        }
+    }
+
+    ```
