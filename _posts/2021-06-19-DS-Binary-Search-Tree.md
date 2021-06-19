@@ -71,7 +71,8 @@ public int min(Tree node) {
     return node.key;
 }
 ```
-*   Maximum  
+*   Maximum
+
 ```java
 public int max(Tree node) {
     while(node != null && node.right != null) {
@@ -79,8 +80,8 @@ public int max(Tree node) {
     }
     return node;
 }
-
 ```
+
 *   Successor
     *   definition  
         the smallest key larger than current node.
