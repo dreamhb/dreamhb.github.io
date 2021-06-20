@@ -7,28 +7,35 @@ categories: ds
 ---
 
 # Binary Search Tree
+
+* TOC
+{:toc}
+
 ## Definition
 Binary search tree satisfies the **binary-search-tree property**:
 Let x be a node in a binary search tree. If y is a node in the left subtree of x, then x.key >= y.key. If y is a node in the right subtree of x, then y.key >= x.key.
 
 ## Traverse  
-*   In-order
-    ```java
+
+####   In-order
+```java
     void inOrder(Tree node) {
         inOrder(node.left);
         print(node.key);
         inOrder(node.right);
     }
-    ```
-*   Pre-order
+```  
+
+####  Pre-order
 ```java
 void preOrder(Tree node) {
     print(node.key);
     preOrder(node.left);
     preOrder(node.right);
 }
-```
-*   Post-order
+```  
+
+####   Post-order
 ```java
 void postOrder(Tree node) {
     postOrder(node.left);
@@ -36,8 +43,9 @@ void postOrder(Tree node) {
     print(node.key);
 }
 ```
-## Basic Operations
-*   Search
+## Basic Operations  
+
+####   Search
 ```java
 public Tree search(Tree node, int key) {
     if (key == node.key || node == null) {
@@ -61,8 +69,9 @@ public int search(Tree node, int key) {
     }
     return node.key;
 }
-```
-*   Minimum
+```  
+
+####  Minimum
 ```java
 public int min(Tree node) {
     while(node != null && node.left != null) {
@@ -70,8 +79,9 @@ public int min(Tree node) {
     }
     return node.key;
 }
-```
-*   Maximum
+```  
+
+####   Maximum
 
 ```java
 public int max(Tree node) {
@@ -82,10 +92,10 @@ public int max(Tree node) {
 }
 ```
 
-*   Successor
-    *   definition  
+####   Successor
+*   definition  
         the smallest key larger than current node.
-    *   code
+*   code
     ```java
     public int successor(Tree node) {
         //if has right subtree, find the minimun in it
@@ -99,11 +109,12 @@ public int max(Tree node) {
         }
         return y.key;
     }
-    ```
-*   Predecessor  
-    *   definition  
+    ```  
+
+####  Predecessor  
+*   definition  
         the largest key smaller than current node.
-    *   code
+*   code
     ```java
     public int predecessor(Tree node) {
         if (node.left != null) {
@@ -116,10 +127,11 @@ public int max(Tree node) {
         }
         return y.key;
     }
-    ```
-*   Insertion  
-    find the position and insert it, it always will be the leaf node.
-    ```java
+    ```  
+
+####  Insertion  
+find the position and insert it, it always will be the leaf node.
+```java
     public void insert(Tree root, Tree x) {
         Tree parent = null;
         while (root != null) {
@@ -140,14 +152,15 @@ public int max(Tree node) {
             parent.right = x;
         }
     }
-    ```
-*   Deletion  
-    Deletion of binary search tree has three conditions.
-    *   the node to delete has no child
-    *   the node to delete has one child only
-    *   the node to delete has two children （left & right）
-        *   the minimum of the right subtree is the right child
-        *   the minimum of the right subtree is not the right child 
+```  
+
+####   Deletion  
+Deletion of binary search tree has three conditions.
+*   the node to delete has no child
+*   the node to delete has one child only
+*   the node to delete has two children （left & right）
+    *   the minimum of the right subtree is the right child
+    *   the minimum of the right subtree is not the right child 
 
     
     ```java
