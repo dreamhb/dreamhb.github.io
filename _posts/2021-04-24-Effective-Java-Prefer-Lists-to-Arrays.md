@@ -11,6 +11,9 @@ image:
 
 **Generics** **Covariant** **Invariant** **Reification** **Erasure** **Contravariant**
 
+*   TOC
+{:toc}
+
 # Prefer List to Arrays
 
 这里总结以下Java范型的一些重要概念，并尝试通过分析语言设计者的意图，加深对Java语言类型系统的理解，并对比下Kotlin。
