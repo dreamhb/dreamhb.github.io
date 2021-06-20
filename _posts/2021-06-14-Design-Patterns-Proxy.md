@@ -20,7 +20,8 @@ controls access to remote object.
 *   Android AIDL/Binder
 
 #### Virtual Proxy  
-controls access to a resource that is expensive to create.
+controls access to a resource that is expensive to create.  
+The virtual proxy often defers the creation of the object until it is needed (like lazy initilization); the Virtual proxy also acts as a surrogate for the object before and while it is being created. After that, the proxy delegates requests directly to the real subject.
 #### Protection Proxy  
 controls access to a resource based on access rights.
 
