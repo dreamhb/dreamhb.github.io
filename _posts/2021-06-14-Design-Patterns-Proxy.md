@@ -3,7 +3,7 @@ layout: post
 title:  "Design-Patterns-Proxy"
 date:   2021-06-14 17:50:00
 comments: true
-categories: main
+categories: design-patterns
 ---
 
 # Proxy Pattern: Controlling Object Access  
@@ -23,7 +23,8 @@ controls access to remote object.
 controls access to a resource that is expensive to create.  
 The virtual proxy often defers the creation of the object until it is needed (like lazy initilization); the Virtual proxy also acts as a surrogate for the object before and while it is being created. After that, the proxy delegates requests directly to the real subject.
 #### Protection Proxy  
-controls access to a resource based on access rights.
+controls access to a resource based on access rights.  
+
 
 ### Implementation
 #### Static Proxy  
