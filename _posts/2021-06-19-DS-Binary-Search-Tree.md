@@ -17,23 +17,54 @@ Let x be a node in a binary search tree. If y is a node in the left subtree of x
 
 ## Traverse  
 
+### Depth-first search
 ####   In-order
 ```java
-    void inOrder(Tree node) {
-        inOrder(node.left);
-        print(node.key);
-        inOrder(node.right);
-    }
+void inOrder(Tree node) {
+    inOrder(node.left);
+    print(node.key);
+    inOrder(node.right);
+}
 ```  
+
+#### Reverse In-order  
+print node in desceding order
+```java
+void reverseInOrder(Tree node) {
+    reverseInOrder(node.right);
+    print(node.key);
+    reverseInOrder(node.left);
+}
+```
 
 ####  Pre-order
 ```java
 void preOrder(Tree node) {
+    if (node == null) return;
     print(node.key);
     preOrder(node.left);
     preOrder(node.right);
 }
 ```  
+
+iterative version  
+```java
+void preOrder(Tree node) {
+    if (node == null) return;
+    Stack s = new Stack();
+    s.push(node);
+    while(!s.isEmpty()) {
+        Tree n = s.pop();
+        print(n.key);
+        if (n.right != null) {
+            s.push(n.right);
+        }
+        if (n.left != null) {
+            s.push(n.left);
+        }
+    }
+}
+```
 
 ####   Post-order
 ```java
@@ -43,6 +74,27 @@ void postOrder(Tree node) {
     print(node.key);
 }
 ```
+
+### Breadth-first search
+#### Level-traverse
+```java
+void levelOrder(Tree node) {
+    Queue q = new LinkedList();
+    q.enqueue(node);
+    while(!q.isEmpty()) {
+        Tree n = q.dequeue();
+        print(n.key);
+        if (n.left != null) {
+            q.enqueue(n.left);
+        }
+        if (n.right != null) {
+            q.enqueue(n.right);
+        }
+    }
+}
+```
+
+
 ## Basic Operations  
 
 ####   Search
