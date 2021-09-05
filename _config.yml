@@ -10,10 +10,10 @@ author:
   url:        https://github.com/dreamhb 
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
 
 #Others
 markdown: kramdown
 
-theme: jekyll-theme-leap-day
+theme: jekyll-theme-cayman

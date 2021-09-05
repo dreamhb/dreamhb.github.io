@@ -4,6 +4,7 @@ title:  "DS-Binary-Search-Tree"
 date:   2021-06-14 17:50:00
 comments: true
 categories: ds
+permalink: '/ds/'
 ---
 
 # Binary Search Tree
