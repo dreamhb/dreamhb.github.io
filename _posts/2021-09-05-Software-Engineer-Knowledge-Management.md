@@ -33,15 +33,36 @@ categories: km
     *   Queue
     *   Set
     *   Map
+        *   HashMap
     *   Tree
+        *   Binary Search Tree
+        *   Red-Black Tree
     *   Graph
+    *   B-Trees
+    *   Fibonacci Heaps
+    *   van Emde Boas Trees
+    *   Data Structures for Disjoint Sets
 *   算法
+    *   基础
+        *   复杂度分析
     *   Sort
         *   Quick Sort
         *   Heap Sort
         *   Merge Sort
+        *   Priority Queue
     *   Seach  
         *   Binary Search
+    *   字符串相关
+    *   图算法
+        *   最小生成树
+        *   最短路径
+        *   Maximum Flow
+*   进阶设计和分析技术
+    *   分治算法
+    *   动态规划
+    *   贪心算法
+    *   回溯算法
+    *   均摊分析
 
 ###    计算机组成原理
 ###    操作系统
@@ -101,4 +122,5 @@ categories: km
 [德鲁克的自我管理（翻译）(未完成)]({% post_url  2021-04-19-Reading-Managing-Oneself %})
 
 ## 参考&引用
-
+[ACM分类](https://dl.acm.org/ccs)  
+[算法导论](https://en.wikipedia.org/wiki/Introduction_to_Algorithms)
