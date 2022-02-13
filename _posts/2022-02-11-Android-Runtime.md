@@ -16,6 +16,8 @@ categories: java
 
 本文主要涉及三个部分，第一部分是标准的JVM垃圾回收算法和实践，第二部分是Android 5.0 以前所采用Dalvik，以及第三部分4.4引入，5.0正式替换Dalvik的ART。
 
+* TOC
+{:toc}
 
 ## 常见的GC算法以及实现
 
