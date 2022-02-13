@@ -80,6 +80,8 @@ Tracing有两种基本算法:
 *   Serial
 *   Parallel
 *   C4
+
+
 ## Dalvik  
 在Android诞生的那个年代,无论是CPU、内存、闪存都和今天不能比，内存最低128M，相同点都是用电池。受限于上述条件，Dalvik的设计和标准的JVM是不一样的。它基于寄存器而标准的JVM都是基于栈的，同时Dalvik对Class文件进一步的优化，使用dex格式，并且使用Zygote用于VM的热启动和分享公共部分。这一部分的具体内容，后面再详细介绍。  
 
@@ -116,8 +118,10 @@ ART继续使用CMS，但是对其做了很大的优化，主要有减少应用�
 通过引入LOS，即Large Object Space，消除了Dalvik分配大内存触发GC_FOR_ALLOC导致的长时间暂停，同时减少了内存碎片。
 
 并且在系统启动和应用在后台时，使用Semi-Space-Collector（Moving Collector）进行碎片整理，减少内存碎片。
+
 ### 7.0
 这个版本，将这一部分用汇编语言重写。
+
 ### 8.0 - 9.0
 Oreo版本引入了新的GC，并且是默认的，即CC（Concurrent Copying），另外一个是已有的CMS。
 
@@ -126,6 +130,7 @@ Oreo版本引入了新的GC，并且是默认的，即CC（Concurrent Copying）
 *   因为每个应用的内存使用量减少了,间接的节省了整个系统的内存
 *   RegionTLAB是的内存的分配效率提高
 *   I/O大会上说分代GC在这个版本没有了,有待查证具体细节
+
 ### 10+
 从这个版本开始,CC默认开启Generational模式,这里的Generational模式,和Heap的根据对象的存活时间来分区还不一样,CC只有两种GC,一种是Young CC,另一种是Full Heap CC.  
 
