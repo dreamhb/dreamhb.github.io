@@ -33,7 +33,8 @@ categories: java
 
 Tracing则是从Root开始遍历,如果reachable,说明该内存不能被回收,反之既可以回收.
 Root一般包括:
-*   方法变量
+*   Call Stack中的变量,包括方法中的临时变量,方法参数
+*   全局变量等
 
 Tracing有两种基本算法:
 *   Mark-Sweep  
@@ -141,4 +142,14 @@ Oreo版本引入了新的GC，并且是默认的，即CC（Concurrent Copying）
 
 CMS则始终是Generational模式.
 
+### 总结
+Java得益于JVM的垃圾回收机制,我们不用手动的分配和释放内存,从而造成野指针问题.
+Android选择了Java作为开发语言,同时基于当时的硬件条件,设计了一个不同于标准JVM的Dalvik,并在后的迭代中,切换到了性能更好的ART.并通过迭代ART,加快内存分配以及应用的响应速度.
 
+需要提一下的是,Dalvik使用JIT(Just-in-Time),在运行时将使用频率高的代码编译成机器代码,提高代码运行效率;而ART最开始使用的AOT(Ahead-of-Time),在应用安装时就将所有的代码编译成机器代码,虽然运行速度加快,但是增加了存储空间占用,并且安装时间变长.后面又重新引入了JIT,一个原因是系统更新耗时太长,另一个原因是应用的只有很少的部分是常用的,需要被编译成机器代码.
+
+### 参考
+https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+https://en.wikipedia.org/wiki/Tracing_garbage_collection  
+https://en.wikipedia.org/wiki/Reference_counting  
+https://source.android.com/devices/tech/dalvik 
