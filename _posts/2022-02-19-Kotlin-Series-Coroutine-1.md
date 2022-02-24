@@ -12,6 +12,10 @@ categories: kotlin
 
 因为是基础部分,所以这一篇主要讲Coroutine的概念,其优势和适用场景,组成部分以及如何使用.
 
+* TOC
+{:toc}
+
+
 ### 概念
 Coroutine是一个非抢占式多任务的程序组件,支持暂停和恢复.
 Coroutine是一个并发设计模式,可以简化异步操作.而Kotlin Coroutine则是Jetbrains对coroutine的一套实现,是一个标准库.
