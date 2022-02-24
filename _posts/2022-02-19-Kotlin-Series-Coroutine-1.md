@@ -211,8 +211,8 @@ fun main() = runBlocking {
 这篇文章,主要是对官方文档的一些总结,在后续的实际使用过程中,总结的经验等,会逐步更新上来.
 
 ### 引用
-https://en.wikipedia.org/wiki/Coroutine  
-https://developer.android.com/kotlin/coroutines  
-https://kotlinlang.org/docs/coroutines-overview.html
-https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html
-https://en.wikipedia.org/wiki/Linearizability
+[https://en.wikipedia.org/wiki/Coroutine](https://en.wikipedia.org/wiki/Coroutine)  
+[https://developer.android.com/kotlin/coroutines](https://developer.android.com/kotlin/coroutines)  
+[https://kotlinlang.org/docs/coroutines-overview.html](https://kotlinlang.org/docs/coroutines-overview.html)  
+[https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html](https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html)  
+[https://en.wikipedia.org/wiki/Linearizability](https://en.wikipedia.org/wiki/Linearizability)

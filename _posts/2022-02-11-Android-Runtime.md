@@ -149,7 +149,7 @@ Android选择了Java作为开发语言,同时基于当时的硬件条件,设计�
 需要提一下的是,Dalvik使用JIT(Just-in-Time),在运行时将使用频率高的代码编译成机器代码,提高代码运行效率;而ART最开始使用的AOT(Ahead-of-Time),在应用安装时就将所有的代码编译成机器代码,虽然运行速度加快,但是增加了存储空间占用,并且安装时间变长.后面又重新引入了JIT,一个原因是系统更新耗时太长,另一个原因是应用的只有很少的部分是常用的,需要被编译成机器代码.
 
 ## 参考
-[https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science))
+[https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science))  
 [https://en.wikipedia.org/wiki/Tracing_garbage_collection](https://en.wikipedia.org/wiki/Tracing_garbage_collection)  
 [https://en.wikipedia.org/wiki/Reference_counting](https://en.wikipedia.org/wiki/Reference_counting)  
 [https://source.android.com/devices/tech/dalvik](https://source.android.com/devices/tech/dalvik)
