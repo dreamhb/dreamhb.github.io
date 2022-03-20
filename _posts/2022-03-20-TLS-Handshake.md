@@ -3,7 +3,7 @@ layout: post
 title:  "TLS Handshake"
 date:   2022-03-20 17:50:00
 comments: true
-categories: network
+categories: kotlin
 ---
 
 HTTPS网络协议,可能是我们日常上网用的最多的协议了,同时有比较安全,至于它为什么安全,是怎么做到的,就是这篇文章要介绍的.
