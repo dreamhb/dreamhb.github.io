@@ -6,6 +6,10 @@ comments: true
 categories: DSA
 ---
 
+* TOC
+{:toc}
+
+
 ## 递归的特点  
 递归是一种通过调用自己来解决问题的办法。
 因为是调用自己，所以必须满足两个条件，才不会导致无限循环。
@@ -56,7 +60,8 @@ f(i) = f(i-1) + f(i-2)
     *   本地变量    
 这些存储占用会在方法返回时释放，也就是说他们是会累积到最后一次方法调用，从而就有可能超过了程序栈的最大空间限制而出现**stack overflow**。
 *   非递归部分  
-主要会是一些全局变量，比如memoization时所用的map。他们大部分会存储在heap上。
+主要会是一些全局变量，比如memoization时所用的map。他们大部分会存储在heap上。  
+
 #### 尾递归  
 尾递归是递归中的特殊情况，即方法中仅存在一个递归调用，而且是方法中的最后一个指令。  
 因为递归调用结束时，即直接返回，所以就不需要使用stack记录caller的信息。Kotlin中可以使用**tailrec**来获取尾递归的优化，会将其转换为循环调用。
@@ -120,7 +125,9 @@ void divideConquer() {
 *   练习
     *   [13. Sort an Array](https://leetcode.com/problems/sort-an-array/)
     *   [14. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
-    *   [15. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+    *   [15. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)  
+
+
 #### Backtracking  
 适合于解决一些计算型问题，通过不断的获取新的候选结果，并果断放弃（backtrack）不合要求的部分结果。  通常情况下backtracking要比brute-force要快很多，因为会舍弃一些不符合要求的计算。  
 
@@ -163,7 +170,9 @@ void backtrack(candidate) {
     *   [20. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
     *   [21. Permutations](https://leetcode.com/problems/permutations/)
     *   [22. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
-    *   [23. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)
+    *   [23. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)  
+
+
 ### 其他
 #### Recursion to Iteration  
 递归虽然很直观，但有时会导致stackoverflow，同时也可能存在效率的问题，比如重复计算，还有可能增加代码的理解难度，比如嵌套的递归。所以必要时，我们可以将递归转化成迭代的形式。
