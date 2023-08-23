@@ -1,6 +1,6 @@
 # Setup
 title:        Jayden's Blog 
-tagline:      Plan-Do-Check-Action 
+tagline:      Plan->Do->Check->Action 
 baseurl:      ""
 paginate:     1
 
@@ -12,8 +12,12 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 #Others
 markdown: kramdown
 
 theme: jekyll-theme-cayman
+
+remote_theme: pages-themes/leap-day@v0.2.0
+
