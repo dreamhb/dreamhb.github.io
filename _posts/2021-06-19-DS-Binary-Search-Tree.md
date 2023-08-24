@@ -3,7 +3,7 @@ layout: post
 title:  "DS-Binary-Search-Tree"
 date:   2021-06-14 17:50:00
 comments: true
-categories: ds
+categories: DSA
 permalink: '/ds/'
 ---
 
@@ -22,6 +22,7 @@ Let x be a node in a binary search tree. If y is a node in the left subtree of x
 ####   In-order
 ```java
 void inOrder(Tree node) {
+    if (node == null) return
     inOrder(node.left);
     print(node.key);
     inOrder(node.right);
@@ -32,6 +33,7 @@ void inOrder(Tree node) {
 print node in desceding order
 ```java
 void reverseInOrder(Tree node) {
+    if (node == null) return
     reverseInOrder(node.right);
     print(node.key);
     reverseInOrder(node.left);
@@ -70,6 +72,7 @@ void preOrder(Tree node) {
 ####   Post-order
 ```java
 void postOrder(Tree node) {
+    if (node == null) return
     postOrder(node.left);
     postOrder(node.right);
     print(node.key);
@@ -80,18 +83,30 @@ void postOrder(Tree node) {
 #### Level-traverse
 ```java
 void levelOrder(Tree node) {
-    Queue q = new LinkedList();
-    q.enqueue(node);
-    while(!q.isEmpty()) {
-        Tree n = q.dequeue();
-        print(n.key);
-        if (n.left != null) {
-            q.enqueue(n.left);
+    List<List<Integer>> results = new ArrayList<>()
+    if (root == null) return results
+
+    Queue<TreeNode> queue = new LinkedList<>()
+    queue.add(root)
+
+    while(!queue.isEmpty()) {
+
+        //here is the key
+        int sizeOfLevel = queue.size()
+        List<Integer> level = new ArrayList<>()
+        for(int i = 0; i < sizeOfLevel; i++) {
+            TreeNode node = queue.remove()
+            level.add(node.val);
+
+            if (node.left != null) queue.add(node.left)
+            if (node.right != null) queue.add(node.right)
         }
-        if (n.right != null) {
-            q.enqueue(n.right);
-        }
+
+        results.add(level)
     }
+
+    //done
+    return results
 }
 ```
 
@@ -199,7 +214,7 @@ find the position and insert it, it always will be the leaf node.
         if (parent == null) {
             //tree is empty
             root = x;
-        }else if (z.key < parent.key) {
+        } else if (z.key < parent.key) {
             parent.left = x;
         } else {
             parent.right = x;
