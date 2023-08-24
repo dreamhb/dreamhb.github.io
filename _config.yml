@@ -34,6 +34,16 @@ theme: minima
 plugins:
   - jekyll-feed
 
+#header_pages:
+#  - about.markdown
+#  - 
+
+minima:
+  date_format: "%b %-d, %Y"
+#show_excerpts: true
+disqus:
+  shortname: hudameng
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
