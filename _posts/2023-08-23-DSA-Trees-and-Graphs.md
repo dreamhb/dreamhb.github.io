@@ -293,8 +293,6 @@ void search(Node node) {
 }
 ```
 
-### [Trees and Graphs Additional Topics]({% link _posts/2023-08-31-DSA-Trees-and-Graphs-2.md %})
-
 
 
 **References**  
