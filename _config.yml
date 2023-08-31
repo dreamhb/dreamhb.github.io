@@ -22,7 +22,7 @@ title: Jayden's Blog
 email: jayden.bing.h@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   This site is created to share newly learned knowledge and thoughts, may include reading notes, tech knowledge and more.
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username: dreamhb
@@ -33,6 +33,7 @@ google_analytics: G-WCVDR84DB9
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-relative-links
 
 #header_pages:
 #  - about.markdown
