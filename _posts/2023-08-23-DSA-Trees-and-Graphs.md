@@ -294,9 +294,57 @@ void search(Node node) {
 ```
 
 
+### Disjoint Set (Union Find)
+Given verticies and edges, how could we quickly determine whether two verticies are conntected? You may consider Shortest Path between these two vertices, but we have another option here, Disjoint Set.
+
+Disjoint Set is also called Union Find, the primary use of it is to address connectivity between components of a network.  
+
+#### Terminologies
+*   **Parent Node**: the direct parent node of a vertex.
+*   **Root Node**: a node without a parent node.
+
+Initially, all the nodes have themself as their parent. When we use **union** function to connect them, if two verticies are conntected, they will have a same parent node.  
+
+After the Find-Union operations, connected verticies are having same parent node while not conntected verticies' parent nodes are different.  
+We could check their connectivity by checking whether their parent nodes are same or not.
+
+Example code of Union Find.
+
+```java
+public class UnionFind {
+    private int[] root
+
+    public UnionFind(int size) {
+        root = new int[size]
+        for(int i = 0; i < size; i++) {
+            root[i] = i
+        }
+    }
+
+    public int find(int x) {
+        while(x != root[x]) {
+            x = root[x]
+        }
+        return x
+    }
+
+    public void union(int x, int y) {
+        int rootX = find(x)
+        int rootY = find(y)
+        if (rootX != rootY) {
+            root[rootY] = rootX
+        }
+    }
+
+    public boolean isConnected(int x, int y) {
+        return find(x) == find(y)
+    }
+}
+```
+
 
 **References**  
-[https://en.wikipedia.org/wiki/Binary_tree](https://en.wikipedia.org/wiki/Binary_tree)  
-Cracking the Coding Interview  
-[Trie](https://en.wikipedia.org/wiki/Trie)  
-[https://en.wikipedia.org/wiki/Depth-first_search](https://en.wikipedia.org/wiki/Depth-first_search)
+*   [https://en.wikipedia.org/wiki/Binary_tree](https://en.wikipedia.org/wiki/Binary_tree)  
+*   Cracking the Coding Interview  
+*   [Trie](https://en.wikipedia.org/wiki/Trie)  
+*   [https://en.wikipedia.org/wiki/Depth-first_search](https://en.wikipedia.org/wiki/Depth-first_search)
