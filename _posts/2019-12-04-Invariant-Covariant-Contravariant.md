@@ -13,7 +13,7 @@ We discuss Arrays first.
 
 Arrays are covariant and reified:
 *   **covariant** means if type A is subtype of type B, A[] is the subtype of B[]. 
-*   **Reified** type is a runtime representation of its component type which means arrays know and enforece their elements at runtime.
+*   **Reified** type is a runtime representation of its component type which means arrays know and enforce their elements at runtime.
 
 ```java
 Integer[] ints = new Integer[] {1,2,3};
