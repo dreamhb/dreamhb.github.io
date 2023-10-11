@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kotlin Series - Coroutine 1"
+title:  "Kotlin Coroutine (1)"
 date:   2022-02-19 17:50:00
 comments: true
 categories: kotlin
