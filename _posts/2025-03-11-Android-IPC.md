@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Android IPC"
-date:   2025-03-11 17:50:00
+date:   2025-03-10 17:50:00
 comments: true
 categories: Android
 ---
