@@ -11,14 +11,11 @@ categories: Android
 * TOC
 {:toc}
 
-How to write this serial blogs about Android IPC from Application to kernel?
-And the tools to analyze the AOSP code. I think they are also useful.
-Also the kernel knowledge.
+IPC is the core component of Android OS.
 
-1> the procedure of data and command flows from app to kernel and vice vesa.
-2> the tools used to analyze the AOSP code.
-    a> gdb
-3> the remaining questions to be answered.
-    a> the thread communications between Client and Binder
-    b> the service itself handles the threads for IPC operations, so when and how the threads are created and how the binder knows about them?
-4> where to publish the content to maximum the influence of my blog.
+Applications need to communicate with system servers like ActivityManagerService to open activities and services, but they are in different processes.  
+How to communicate with them?
+
+The Android OS uses Binder as its main method for IPC.
+
+In the following series of blogs, I will take a deep dive into the procedure of IPC from Application to the binder driver in the kernel.
